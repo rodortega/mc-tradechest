@@ -64,6 +64,9 @@ A Minecraft Fabric mod that adds automatic trading chests with a 9x5 inventory l
 ### Crafting
 
 Craft a Trade Chest using this recipe:
+
+![Trade Chest Recipe](screenshotss/recipe.png)
+
 ```
 [Planks] [Planks] [Planks]
 [Planks] [Paper ] [Planks]
@@ -79,19 +82,27 @@ Craft a Trade Chest using this recipe:
    - Place it in slot 18 (first slot of third row)
    - You are now the owner and can manage the chest
 
+![Setting Owner](screenshotss/set_owner.png)
+
 3. **Configure Buy Requirements** (Slot 19):
    - Rename a paper: `10 minecraft:iron_ingot`
    - Place in slot 19
    - This determines what customers must provide
+
+![Setting Buy Requirements](screenshotss/set_buy.png)
 
 4. **Configure Sell Items** (Slot 20):
    - Rename a paper: `5 minecraft:diamond`
    - Place in slot 20
    - This determines what customers receive
 
+![Setting Sell Items](screenshotss/set_sell.png)
+
 5. **Stock Sell Items**:
    - Place diamonds in the bottom row (slots 36-44)
    - Only the configured sell item type can be placed there
+
+![Restocking Supplies](screenshotss/restock_supplies.png)
 
 6. **Ready to Trade**:
    - Customers place iron ingots in top row (slots 0-8)
