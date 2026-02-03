@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.rodmod.tradechest.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"TradeChestSlotMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

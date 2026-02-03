@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rodmod:block/trade_chest"
+    }
+  }
+}

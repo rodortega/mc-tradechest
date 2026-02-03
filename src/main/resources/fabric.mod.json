@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "rodmod",
+	"version": "${version}",
+	"name": "TradeChest",
+	"description": "A mod featuring trade chests and more!",
+	"authors": [
+		"Rod"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.rodmod.tradechest.RodMod"
+		],
+		"client": [
+			"com.rodmod.tradechest.RodModClient"
+		]
+	},
+	"mixins": [
+		"rodmod.mixins.json",
+		{
+			"config": "rodmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
