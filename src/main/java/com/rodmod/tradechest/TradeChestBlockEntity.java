@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class TradeChestBlockEntity extends BlockEntity implements Container {
-    private final ItemStack[] inventory = new ItemStack[27];
+    private final ItemStack[] inventory = new ItemStack[45];
     private String ownerName = "";
     private String buyItem = "";
     private int buyAmount = 0;
@@ -26,8 +26,8 @@ public class TradeChestBlockEntity extends BlockEntity implements Container {
     }
 
     public void checkForConfiguration() {
-        // Check slot 9 for owner paper
-        ItemStack ownerItem = inventory[9];
+        // Check slot 18 for owner paper
+        ItemStack ownerItem = inventory[18];
         if (ownerItem.getItem() == Items.PAPER && ownerItem.hasCustomHoverName()) {
             String newOwnerName = ownerItem.getHoverName().getString();
             if (!newOwnerName.equals(ownerName)) {
@@ -41,8 +41,8 @@ public class TradeChestBlockEntity extends BlockEntity implements Container {
             }
         }
         
-        // Check slot 10 for buy paper
-        ItemStack buyItem = inventory[10];
+        // Check slot 19 for buy paper
+        ItemStack buyItem = inventory[19];
         if (buyItem.getItem() == Items.PAPER && buyItem.hasCustomHoverName()) {
             String buyText = buyItem.getHoverName().getString();
             parseBuyConfig(buyText);
@@ -51,8 +51,8 @@ public class TradeChestBlockEntity extends BlockEntity implements Container {
             this.buyAmount = 0;
         }
         
-        // Check slot 11 for sell paper
-        ItemStack sellItem = inventory[11];
+        // Check slot 20 for sell paper
+        ItemStack sellItem = inventory[20];
         if (sellItem.getItem() == Items.PAPER && sellItem.hasCustomHoverName()) {
             String sellText = sellItem.getHoverName().getString();
             parseSellConfig(sellText);
@@ -502,7 +502,7 @@ public class TradeChestBlockEntity extends BlockEntity implements Container {
         if (slot >= 0 && slot < inventory.length) {
             inventory[slot] = stack;
             setChanged();
-            if (slot >= 9 && slot <= 11) {
+            if (slot >= 18 && slot <= 20) {
                 checkForConfiguration();
             }
         }
