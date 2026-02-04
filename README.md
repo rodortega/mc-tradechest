@@ -205,7 +205,3 @@ This mod uses the Fabric toolchain:
 - `TradeChestBlockEntity` - Block entity with inventory logic
 - `TradeChestMenu` - Container menu for GUI
 - `TradeChestSlot` - Custom slot with placement restrictions
-
-## License
-
-This mod is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
