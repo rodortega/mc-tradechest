@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/orientable",
   "textures": {
-    "all": "rodmod:block/trade_chest"
+    "top": "rodmod:block/trade_chest_top",
+    "front": "rodmod:block/trade_chest",
+    "side": "rodmod:block/trade_chest_side"
   }
 }
